@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D82EFDE0247B68E600E796AF /* ODHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D82EFDDF247B68E600E796AF /* ODHttpTool.m */; };
+		D82EFE0B247CEA8400E796AF /* OdinDomainSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82EFE06247CEA8400E796AF /* OdinDomainSecurity.framework */; };
+		D82EFE16247D26DB00E796AF /* libODInstallSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D82EFE14247D26DB00E796AF /* libODInstallSDK.a */; };
+		D82EFE4B247DF81500E796AF /* ODIAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D82EFE49247DF81500E796AF /* ODIAlertViewController.m */; };
+		D82EFE4C247DF81500E796AF /* ODIAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D82EFE4A247DF81500E796AF /* ODIAlertViewController.xib */; };
+		D82EFE5A247E116B00E796AF /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D82EFE58247E116B00E796AF /* MBProgressHUD.m */; };
+		D82EFE5D247E17F300E796AF /* NSString+ODIExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D82EFE5C247E17F300E796AF /* NSString+ODIExtension.m */; };
+		D83DEB382478B7DC00F710F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DEB372478B7DC00F710F1 /* AppDelegate.m */; };
+		D83DEB3B2478B7DC00F710F1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DEB3A2478B7DC00F710F1 /* SceneDelegate.m */; };
+		D83DEB432478B7DE00F710F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83DEB422478B7DE00F710F1 /* Assets.xcassets */; };
+		D83DEB462478B7DE00F710F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83DEB442478B7DE00F710F1 /* LaunchScreen.storyboard */; };
+		D83DEB492478B7DE00F710F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DEB482478B7DE00F710F1 /* main.m */; };
+		D83DEB542478B87C00F710F1 /* ODIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DEB532478B87C00F710F1 /* ODIHomeViewController.m */; };
+		D83DEB5D2478B8F500F710F1 /* ODIHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D83DEB5A2478B8F400F710F1 /* ODIHomeCell.xib */; };
+		D83DEB5E2478B8F500F710F1 /* ODIHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DEB5C2478B8F500F710F1 /* ODIHomeCell.m */; };
+		D83DEB622478BD4900F710F1 /* UIColor+ODExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DEB602478BD4900F710F1 /* UIColor+ODExtension.m */; };
+		D83DEB702478BF1E00F710F1 /* ODIWakeUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D83DEB6D2478BF1E00F710F1 /* ODIWakeUpViewController.xib */; };
+		D83DEB712478BF1E00F710F1 /* ODIWakeUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DEB6F2478BF1E00F710F1 /* ODIWakeUpViewController.m */; };
+		D83DEB742478C2A500F710F1 /* ODIQRCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DEB732478C2A500F710F1 /* ODIQRCodeTool.m */; };
+		D83DEB792478C56200F710F1 /* ODIUserShipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DEB782478C56200F710F1 /* ODIUserShipViewController.m */; };
+		D84C885C247FACFF00BB7051 /* OdinShareSDKUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84C8828247FACFF00BB7051 /* OdinShareSDKUI.framework */; };
+		D84C885D247FACFF00BB7051 /* ShareSDKUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D84C8829247FACFF00BB7051 /* ShareSDKUI.bundle */; };
+		D84C885E247FACFF00BB7051 /* OdinShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84C882B247FACFF00BB7051 /* OdinShareSDK.framework */; };
+		D84C885F247FACFF00BB7051 /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D84C882E247FACFF00BB7051 /* libSocialQQ.a */; };
+		D84C8860247FACFF00BB7051 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84C8831247FACFF00BB7051 /* TencentOpenAPI.framework */; };
+		D84C886B247FACFF00BB7051 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D84C884B247FACFF00BB7051 /* README.txt */; };
+		D84C886C247FACFF00BB7051 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D84C884D247FACFF00BB7051 /* libWeChatSDK.a */; };
+		D84C886D247FACFF00BB7051 /* libSocialWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D84C884E247FACFF00BB7051 /* libSocialWeChat.a */; };
+		D84C8877247FB03B00BB7051 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D84C8873247FAFEC00BB7051 /* libc++.tbd */; };
+		D84C8878247FB04700BB7051 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D84C8874247FB00700BB7051 /* libz.tbd */; };
+		D84C8879247FB05200BB7051 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D84C8875247FB01F00BB7051 /* libsqlite3.tbd */; };
+		D84C887B247FB06500BB7051 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84C887A247FB06500BB7051 /* CoreMotion.framework */; };
+		D8AADA33248769D200187D35 /* ODNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AADA32248769D200187D35 /* ODNavigationViewController.m */; };
+		D8AADA3624876A6C00187D35 /* MBProgressHUD+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AADA3524876A6C00187D35 /* MBProgressHUD+Extension.m */; };
+		D8EEAF292478D54400BA8E39 /* ODIUUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EEAF252478D54400BA8E39 /* ODIUUserView.m */; };
+		D8EEAF2A2478D54400BA8E39 /* ODIUQRCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EEAF262478D54400BA8E39 /* ODIUQRCodeView.m */; };
+		D8EEAF2D2478F11000BA8E39 /* ODIShipListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EEAF2C2478F11000BA8E39 /* ODIShipListViewController.m */; };
+		D8EEAF302478F18000BA8E39 /* ODIUShipListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EEAF2F2478F18000BA8E39 /* ODIUShipListCell.m */; };
+		D8EEAF332478FEDF00BA8E39 /* ODIUShipListSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EEAF322478FEDF00BA8E39 /* ODIUShipListSectionHeaderView.m */; };
+		D8EEAF382479032300BA8E39 /* ODICStatisticsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EEAF372479032300BA8E39 /* ODICStatisticsView.m */; };
+		D8EEAF3B2479036B00BA8E39 /* ODICTipVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EEAF3A2479036B00BA8E39 /* ODICTipVIew.m */; };
+		D8EEAF3E247907AC00BA8E39 /* ODIChannelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EEAF3D247907AC00BA8E39 /* ODIChannelViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D82EFDDE247B68E600E796AF /* ODHttpTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODHttpTool.h; sourceTree = "<group>"; };
+		D82EFDDF247B68E600E796AF /* ODHttpTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODHttpTool.m; sourceTree = "<group>"; };
+		D82EFE03247CE95100E796AF /* ODInstallSDKSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ODInstallSDKSample.entitlements; sourceTree = "<group>"; };
+		D82EFE06247CEA8400E796AF /* OdinDomainSecurity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OdinDomainSecurity.framework; sourceTree = "<group>"; };
+		D82EFE13247D26DB00E796AF /* ODInstallData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODInstallData.h; sourceTree = "<group>"; };
+		D82EFE14247D26DB00E796AF /* libODInstallSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libODInstallSDK.a; sourceTree = "<group>"; };
+		D82EFE15247D26DB00E796AF /* ODInstallSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODInstallSDK.h; sourceTree = "<group>"; };
+		D82EFE48247DF81500E796AF /* ODIAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODIAlertViewController.h; sourceTree = "<group>"; };
+		D82EFE49247DF81500E796AF /* ODIAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODIAlertViewController.m; sourceTree = "<group>"; };
+		D82EFE4A247DF81500E796AF /* ODIAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ODIAlertViewController.xib; sourceTree = "<group>"; };
+		D82EFE58247E116B00E796AF /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		D82EFE59247E116B00E796AF /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		D82EFE5B247E17F300E796AF /* NSString+ODIExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ODIExtension.h"; sourceTree = "<group>"; };
+		D82EFE5C247E17F300E796AF /* NSString+ODIExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ODIExtension.m"; sourceTree = "<group>"; };
+		D83DEB332478B7DC00F710F1 /* ODInstallSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ODInstallSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83DEB362478B7DC00F710F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D83DEB372478B7DC00F710F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D83DEB392478B7DC00F710F1 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		D83DEB3A2478B7DC00F710F1 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		D83DEB422478B7DE00F710F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D83DEB452478B7DE00F710F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D83DEB472478B7DE00F710F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D83DEB482478B7DE00F710F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D83DEB4F2478B84E00F710F1 /* ODInstallHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODInstallHeader.h; sourceTree = "<group>"; };
+		D83DEB522478B87C00F710F1 /* ODIHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODIHomeViewController.h; sourceTree = "<group>"; };
+		D83DEB532478B87C00F710F1 /* ODIHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODIHomeViewController.m; sourceTree = "<group>"; };
+		D83DEB5A2478B8F400F710F1 /* ODIHomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ODIHomeCell.xib; sourceTree = "<group>"; };
+		D83DEB5B2478B8F400F710F1 /* ODIHomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODIHomeCell.h; sourceTree = "<group>"; };
+		D83DEB5C2478B8F500F710F1 /* ODIHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODIHomeCell.m; sourceTree = "<group>"; };
+		D83DEB602478BD4900F710F1 /* UIColor+ODExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ODExtension.m"; sourceTree = "<group>"; };
+		D83DEB612478BD4900F710F1 /* UIColor+ODExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ODExtension.h"; sourceTree = "<group>"; };
+		D83DEB6D2478BF1E00F710F1 /* ODIWakeUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ODIWakeUpViewController.xib; sourceTree = "<group>"; };
+		D83DEB6E2478BF1E00F710F1 /* ODIWakeUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODIWakeUpViewController.h; sourceTree = "<group>"; };
+		D83DEB6F2478BF1E00F710F1 /* ODIWakeUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODIWakeUpViewController.m; sourceTree = "<group>"; };
+		D83DEB722478C2A500F710F1 /* ODIQRCodeTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODIQRCodeTool.h; sourceTree = "<group>"; };
+		D83DEB732478C2A500F710F1 /* ODIQRCodeTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODIQRCodeTool.m; sourceTree = "<group>"; };
+		D83DEB772478C56200F710F1 /* ODIUserShipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODIUserShipViewController.h; sourceTree = "<group>"; };
+		D83DEB782478C56200F710F1 /* ODIUserShipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODIUserShipViewController.m; sourceTree = "<group>"; };
+		D84C8828247FACFF00BB7051 /* OdinShareSDKUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OdinShareSDKUI.framework; sourceTree = "<group>"; };
+		D84C8829247FACFF00BB7051 /* ShareSDKUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShareSDKUI.bundle; sourceTree = "<group>"; };
+		D84C882B247FACFF00BB7051 /* OdinShareSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OdinShareSDK.framework; sourceTree = "<group>"; };
+		D84C882E247FACFF00BB7051 /* libSocialQQ.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialQQ.a; sourceTree = "<group>"; };
+		D84C882F247FACFF00BB7051 /* OdinSocialQQHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OdinSocialQQHandler.h; sourceTree = "<group>"; };
+		D84C8831247FACFF00BB7051 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		D84C8849247FACFF00BB7051 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		D84C884A247FACFF00BB7051 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		D84C884B247FACFF00BB7051 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		D84C884C247FACFF00BB7051 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		D84C884D247FACFF00BB7051 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		D84C884E247FACFF00BB7051 /* libSocialWeChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialWeChat.a; sourceTree = "<group>"; };
+		D84C884F247FACFF00BB7051 /* OdinSocialWeChatHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OdinSocialWeChatHandler.h; sourceTree = "<group>"; };
+		D84C8873247FAFEC00BB7051 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		D84C8874247FB00700BB7051 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D84C8875247FB01F00BB7051 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		D84C8876247FB02B00BB7051 /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
+		D84C887A247FB06500BB7051 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D88F0E8424862D3600AE6916 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		D8AADA31248769D200187D35 /* ODNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODNavigationViewController.h; sourceTree = "<group>"; };
+		D8AADA32248769D200187D35 /* ODNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODNavigationViewController.m; sourceTree = "<group>"; };
+		D8AADA3424876A6C00187D35 /* MBProgressHUD+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Extension.h"; sourceTree = "<group>"; };
+		D8AADA3524876A6C00187D35 /* MBProgressHUD+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Extension.m"; sourceTree = "<group>"; };
+		D8EEAF252478D54400BA8E39 /* ODIUUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODIUUserView.m; sourceTree = "<group>"; };
+		D8EEAF262478D54400BA8E39 /* ODIUQRCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODIUQRCodeView.m; sourceTree = "<group>"; };
+		D8EEAF272478D54400BA8E39 /* ODIUUserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODIUUserView.h; sourceTree = "<group>"; };
+		D8EEAF282478D54400BA8E39 /* ODIUQRCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODIUQRCodeView.h; sourceTree = "<group>"; };
+		D8EEAF2B2478F11000BA8E39 /* ODIShipListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODIShipListViewController.h; sourceTree = "<group>"; };
+		D8EEAF2C2478F11000BA8E39 /* ODIShipListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODIShipListViewController.m; sourceTree = "<group>"; };
+		D8EEAF2E2478F18000BA8E39 /* ODIUShipListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODIUShipListCell.h; sourceTree = "<group>"; };
+		D8EEAF2F2478F18000BA8E39 /* ODIUShipListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODIUShipListCell.m; sourceTree = "<group>"; };
+		D8EEAF312478FEDF00BA8E39 /* ODIUShipListSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODIUShipListSectionHeaderView.h; sourceTree = "<group>"; };
+		D8EEAF322478FEDF00BA8E39 /* ODIUShipListSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODIUShipListSectionHeaderView.m; sourceTree = "<group>"; };
+		D8EEAF362479032300BA8E39 /* ODICStatisticsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODICStatisticsView.h; sourceTree = "<group>"; };
+		D8EEAF372479032300BA8E39 /* ODICStatisticsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODICStatisticsView.m; sourceTree = "<group>"; };
+		D8EEAF392479036B00BA8E39 /* ODICTipVIew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODICTipVIew.h; sourceTree = "<group>"; };
+		D8EEAF3A2479036B00BA8E39 /* ODICTipVIew.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODICTipVIew.m; sourceTree = "<group>"; };
+		D8EEAF3C247907AC00BA8E39 /* ODIChannelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODIChannelViewController.h; sourceTree = "<group>"; };
+		D8EEAF3D247907AC00BA8E39 /* ODIChannelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODIChannelViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D83DEB302478B7DC00F710F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84C886C247FACFF00BB7051 /* libWeChatSDK.a in Frameworks */,
+				D84C886D247FACFF00BB7051 /* libSocialWeChat.a in Frameworks */,
+				D84C885F247FACFF00BB7051 /* libSocialQQ.a in Frameworks */,
+				D84C8860247FACFF00BB7051 /* TencentOpenAPI.framework in Frameworks */,
+				D84C887B247FB06500BB7051 /* CoreMotion.framework in Frameworks */,
+				D84C8877247FB03B00BB7051 /* libc++.tbd in Frameworks */,
+				D84C885C247FACFF00BB7051 /* OdinShareSDKUI.framework in Frameworks */,
+				D84C885E247FACFF00BB7051 /* OdinShareSDK.framework in Frameworks */,
+				D84C8878247FB04700BB7051 /* libz.tbd in Frameworks */,
+				D82EFE0B247CEA8400E796AF /* OdinDomainSecurity.framework in Frameworks */,
+				D82EFE16247D26DB00E796AF /* libODInstallSDK.a in Frameworks */,
+				D84C8879247FB05200BB7051 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D82EFE04247CEA8400E796AF /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				D84C8826247FACFF00BB7051 /* OdinShare */,
+				D82EFE56247E116B00E796AF /* ThirdParty */,
+				D82EFE12247D26DB00E796AF /* ODInstallSDK */,
+				D82EFE05247CEA8400E796AF /* Require */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		D82EFE05247CEA8400E796AF /* Require */ = {
+			isa = PBXGroup;
+			children = (
+				D82EFE06247CEA8400E796AF /* OdinDomainSecurity.framework */,
+			);
+			path = Require;
+			sourceTree = "<group>";
+		};
+		D82EFE12247D26DB00E796AF /* ODInstallSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D82EFE13247D26DB00E796AF /* ODInstallData.h */,
+				D82EFE14247D26DB00E796AF /* libODInstallSDK.a */,
+				D82EFE15247D26DB00E796AF /* ODInstallSDK.h */,
+			);
+			path = ODInstallSDK;
+			sourceTree = "<group>";
+		};
+		D82EFE56247E116B00E796AF /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				D82EFE57247E116B00E796AF /* MBProgressHUD */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		D82EFE57247E116B00E796AF /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				D8AADA3424876A6C00187D35 /* MBProgressHUD+Extension.h */,
+				D8AADA3524876A6C00187D35 /* MBProgressHUD+Extension.m */,
+				D82EFE58247E116B00E796AF /* MBProgressHUD.m */,
+				D82EFE59247E116B00E796AF /* MBProgressHUD.h */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		D83DEB2A2478B7DC00F710F1 = {
+			isa = PBXGroup;
+			children = (
+				D83DEB352478B7DC00F710F1 /* ODInstallSDKSample */,
+				D83DEB342478B7DC00F710F1 /* Products */,
+				D84C8872247FAFEB00BB7051 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D83DEB342478B7DC00F710F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D83DEB332478B7DC00F710F1 /* ODInstallSDKSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D83DEB352478B7DC00F710F1 /* ODInstallSDKSample */ = {
+			isa = PBXGroup;
+			children = (
+				D82EFE04247CEA8400E796AF /* SDK */,
+				D82EFE03247CE95100E796AF /* ODInstallSDKSample.entitlements */,
+				D8EEAF342479022000BA8E39 /* Channel */,
+				D83DEB752478C42900F710F1 /* UserShip */,
+				D83DEB672478BEEB00F710F1 /* WakeUp */,
+				D83DEB5F2478BD4900F710F1 /* UItils */,
+				D83DEB502478B87100F710F1 /* Home */,
+				D83DEB362478B7DC00F710F1 /* AppDelegate.h */,
+				D83DEB372478B7DC00F710F1 /* AppDelegate.m */,
+				D8AADA31248769D200187D35 /* ODNavigationViewController.h */,
+				D8AADA32248769D200187D35 /* ODNavigationViewController.m */,
+				D83DEB392478B7DC00F710F1 /* SceneDelegate.h */,
+				D83DEB3A2478B7DC00F710F1 /* SceneDelegate.m */,
+				D83DEB422478B7DE00F710F1 /* Assets.xcassets */,
+				D83DEB442478B7DE00F710F1 /* LaunchScreen.storyboard */,
+				D83DEB472478B7DE00F710F1 /* Info.plist */,
+				D83DEB482478B7DE00F710F1 /* main.m */,
+				D83DEB4F2478B84E00F710F1 /* ODInstallHeader.h */,
+			);
+			path = ODInstallSDKSample;
+			sourceTree = "<group>";
+		};
+		D83DEB502478B87100F710F1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D83DEB512478B87100F710F1 /* View */,
+				D83DEB522478B87C00F710F1 /* ODIHomeViewController.h */,
+				D83DEB532478B87C00F710F1 /* ODIHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D83DEB512478B87100F710F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D83DEB5B2478B8F400F710F1 /* ODIHomeCell.h */,
+				D83DEB5C2478B8F500F710F1 /* ODIHomeCell.m */,
+				D83DEB5A2478B8F400F710F1 /* ODIHomeCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D83DEB5F2478BD4900F710F1 /* UItils */ = {
+			isa = PBXGroup;
+			children = (
+				D83DEB602478BD4900F710F1 /* UIColor+ODExtension.m */,
+				D83DEB612478BD4900F710F1 /* UIColor+ODExtension.h */,
+				D83DEB722478C2A500F710F1 /* ODIQRCodeTool.h */,
+				D83DEB732478C2A500F710F1 /* ODIQRCodeTool.m */,
+				D82EFDDE247B68E600E796AF /* ODHttpTool.h */,
+				D82EFDDF247B68E600E796AF /* ODHttpTool.m */,
+				D82EFE5B247E17F300E796AF /* NSString+ODIExtension.h */,
+				D82EFE5C247E17F300E796AF /* NSString+ODIExtension.m */,
+			);
+			path = UItils;
+			sourceTree = "<group>";
+		};
+		D83DEB672478BEEB00F710F1 /* WakeUp */ = {
+			isa = PBXGroup;
+			children = (
+				D83DEB6E2478BF1E00F710F1 /* ODIWakeUpViewController.h */,
+				D83DEB6F2478BF1E00F710F1 /* ODIWakeUpViewController.m */,
+				D83DEB6D2478BF1E00F710F1 /* ODIWakeUpViewController.xib */,
+			);
+			path = WakeUp;
+			sourceTree = "<group>";
+		};
+		D83DEB752478C42900F710F1 /* UserShip */ = {
+			isa = PBXGroup;
+			children = (
+				D8EEAF242478D54400BA8E39 /* View */,
+				D83DEB772478C56200F710F1 /* ODIUserShipViewController.h */,
+				D83DEB782478C56200F710F1 /* ODIUserShipViewController.m */,
+				D8EEAF2B2478F11000BA8E39 /* ODIShipListViewController.h */,
+				D8EEAF2C2478F11000BA8E39 /* ODIShipListViewController.m */,
+			);
+			path = UserShip;
+			sourceTree = "<group>";
+		};
+		D84C8826247FACFF00BB7051 /* OdinShare */ = {
+			isa = PBXGroup;
+			children = (
+				D84C8827247FACFF00BB7051 /* UI */,
+				D84C882A247FACFF00BB7051 /* Core */,
+				D84C882C247FACFF00BB7051 /* Social */,
+			);
+			path = OdinShare;
+			sourceTree = "<group>";
+		};
+		D84C8827247FACFF00BB7051 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D84C8828247FACFF00BB7051 /* OdinShareSDKUI.framework */,
+				D84C8829247FACFF00BB7051 /* ShareSDKUI.bundle */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D84C882A247FACFF00BB7051 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D84C882B247FACFF00BB7051 /* OdinShareSDK.framework */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D84C882C247FACFF00BB7051 /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				D84C882D247FACFF00BB7051 /* SocialQQ */,
+				D84C8847247FACFF00BB7051 /* SocialWeChat */,
+			);
+			path = Social;
+			sourceTree = "<group>";
+		};
+		D84C882D247FACFF00BB7051 /* SocialQQ */ = {
+			isa = PBXGroup;
+			children = (
+				D84C882E247FACFF00BB7051 /* libSocialQQ.a */,
+				D84C882F247FACFF00BB7051 /* OdinSocialQQHandler.h */,
+				D84C8830247FACFF00BB7051 /* QQSDK */,
+			);
+			path = SocialQQ;
+			sourceTree = "<group>";
+		};
+		D84C8830247FACFF00BB7051 /* QQSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D84C8831247FACFF00BB7051 /* TencentOpenAPI.framework */,
+			);
+			path = QQSDK;
+			sourceTree = "<group>";
+		};
+		D84C8847247FACFF00BB7051 /* SocialWeChat */ = {
+			isa = PBXGroup;
+			children = (
+				D84C8848247FACFF00BB7051 /* WeChatSDK1.8.4 */,
+				D84C884E247FACFF00BB7051 /* libSocialWeChat.a */,
+				D84C884F247FACFF00BB7051 /* OdinSocialWeChatHandler.h */,
+			);
+			path = SocialWeChat;
+			sourceTree = "<group>";
+		};
+		D84C8848247FACFF00BB7051 /* WeChatSDK1.8.4 */ = {
+			isa = PBXGroup;
+			children = (
+				D84C8849247FACFF00BB7051 /* WXApi.h */,
+				D84C884A247FACFF00BB7051 /* WXApiObject.h */,
+				D84C884B247FACFF00BB7051 /* README.txt */,
+				D84C884C247FACFF00BB7051 /* WechatAuthSDK.h */,
+				D84C884D247FACFF00BB7051 /* libWeChatSDK.a */,
+			);
+			path = WeChatSDK1.8.4;
+			sourceTree = "<group>";
+		};
+		D84C8872247FAFEB00BB7051 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D84C887A247FB06500BB7051 /* CoreMotion.framework */,
+				D84C8876247FB02B00BB7051 /* libc.tbd */,
+				D84C8875247FB01F00BB7051 /* libsqlite3.tbd */,
+				D84C8874247FB00700BB7051 /* libz.tbd */,
+				D84C8873247FAFEC00BB7051 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8EEAF242478D54400BA8E39 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8EEAF272478D54400BA8E39 /* ODIUUserView.h */,
+				D8EEAF252478D54400BA8E39 /* ODIUUserView.m */,
+				D8EEAF282478D54400BA8E39 /* ODIUQRCodeView.h */,
+				D8EEAF262478D54400BA8E39 /* ODIUQRCodeView.m */,
+				D8EEAF2E2478F18000BA8E39 /* ODIUShipListCell.h */,
+				D8EEAF2F2478F18000BA8E39 /* ODIUShipListCell.m */,
+				D8EEAF312478FEDF00BA8E39 /* ODIUShipListSectionHeaderView.h */,
+				D8EEAF322478FEDF00BA8E39 /* ODIUShipListSectionHeaderView.m */,
+				D82EFE48247DF81500E796AF /* ODIAlertViewController.h */,
+				D82EFE49247DF81500E796AF /* ODIAlertViewController.m */,
+				D82EFE4A247DF81500E796AF /* ODIAlertViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8EEAF342479022000BA8E39 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				D8EEAF352479023100BA8E39 /* View */,
+				D8EEAF3C247907AC00BA8E39 /* ODIChannelViewController.h */,
+				D8EEAF3D247907AC00BA8E39 /* ODIChannelViewController.m */,
+			);
+			path = Channel;
+			sourceTree = "<group>";
+		};
+		D8EEAF352479023100BA8E39 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8EEAF362479032300BA8E39 /* ODICStatisticsView.h */,
+				D8EEAF372479032300BA8E39 /* ODICStatisticsView.m */,
+				D8EEAF392479036B00BA8E39 /* ODICTipVIew.h */,
+				D8EEAF3A2479036B00BA8E39 /* ODICTipVIew.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D83DEB322478B7DC00F710F1 /* ODInstallSDKSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D83DEB4C2478B7DE00F710F1 /* Build configuration list for PBXNativeTarget "ODInstallSDKSample" */;
+			buildPhases = (
+				D83DEB2F2478B7DC00F710F1 /* Sources */,
+				D83DEB302478B7DC00F710F1 /* Frameworks */,
+				D83DEB312478B7DC00F710F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ODInstallSDKSample;
+			productName = ODInstallSDKSample;
+			productReference = D83DEB332478B7DC00F710F1 /* ODInstallSDKSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D83DEB2B2478B7DC00F710F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = odin;
+				TargetAttributes = {
+					D83DEB322478B7DC00F710F1 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = D83DEB2E2478B7DC00F710F1 /* Build configuration list for PBXProject "ODInstallSDKSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = D83DEB2A2478B7DC00F710F1;
+			productRefGroup = D83DEB342478B7DC00F710F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D83DEB322478B7DC00F710F1 /* ODInstallSDKSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D83DEB312478B7DC00F710F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82EFE4C247DF81500E796AF /* ODIAlertViewController.xib in Resources */,
+				D83DEB702478BF1E00F710F1 /* ODIWakeUpViewController.xib in Resources */,
+				D83DEB462478B7DE00F710F1 /* LaunchScreen.storyboard in Resources */,
+				D84C886B247FACFF00BB7051 /* README.txt in Resources */,
+				D83DEB432478B7DE00F710F1 /* Assets.xcassets in Resources */,
+				D84C885D247FACFF00BB7051 /* ShareSDKUI.bundle in Resources */,
+				D83DEB5D2478B8F500F710F1 /* ODIHomeCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D83DEB2F2478B7DC00F710F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82EFDE0247B68E600E796AF /* ODHttpTool.m in Sources */,
+				D82EFE5D247E17F300E796AF /* NSString+ODIExtension.m in Sources */,
+				D83DEB5E2478B8F500F710F1 /* ODIHomeCell.m in Sources */,
+				D82EFE4B247DF81500E796AF /* ODIAlertViewController.m in Sources */,
+				D83DEB542478B87C00F710F1 /* ODIHomeViewController.m in Sources */,
+				D83DEB742478C2A500F710F1 /* ODIQRCodeTool.m in Sources */,
+				D8EEAF292478D54400BA8E39 /* ODIUUserView.m in Sources */,
+				D83DEB792478C56200F710F1 /* ODIUserShipViewController.m in Sources */,
+				D82EFE5A247E116B00E796AF /* MBProgressHUD.m in Sources */,
+				D83DEB382478B7DC00F710F1 /* AppDelegate.m in Sources */,
+				D83DEB712478BF1E00F710F1 /* ODIWakeUpViewController.m in Sources */,
+				D8EEAF302478F18000BA8E39 /* ODIUShipListCell.m in Sources */,
+				D8EEAF332478FEDF00BA8E39 /* ODIUShipListSectionHeaderView.m in Sources */,
+				D8EEAF3E247907AC00BA8E39 /* ODIChannelViewController.m in Sources */,
+				D8EEAF382479032300BA8E39 /* ODICStatisticsView.m in Sources */,
+				D83DEB492478B7DE00F710F1 /* main.m in Sources */,
+				D83DEB622478BD4900F710F1 /* UIColor+ODExtension.m in Sources */,
+				D8AADA33248769D200187D35 /* ODNavigationViewController.m in Sources */,
+				D8EEAF2D2478F11000BA8E39 /* ODIShipListViewController.m in Sources */,
+				D8EEAF2A2478D54400BA8E39 /* ODIUQRCodeView.m in Sources */,
+				D83DEB3B2478B7DC00F710F1 /* SceneDelegate.m in Sources */,
+				D8EEAF3B2479036B00BA8E39 /* ODICTipVIew.m in Sources */,
+				D8AADA3624876A6C00187D35 /* MBProgressHUD+Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D83DEB442478B7DE00F710F1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D83DEB452478B7DE00F710F1 /* Base */,
+				D88F0E8424862D3600AE6916 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D83DEB4A2478B7DE00F710F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D83DEB4B2478B7DE00F710F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D83DEB4D2478B7DE00F710F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ODInstallSDKSample/ODInstallSDKSample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/Require",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/UI",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Core",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialQQ/QQSDK",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialFacebook/FacebookShare",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialDingTalk/DingTalk",
+				);
+				INFOPLIST_FILE = ODInstallSDKSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/ODInstallSDK_yy",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/ODInstallSDK",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialQQ",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SoicalInstagram",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialFacebook",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialSina",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialSina/Weibo_SDK/libWeiboSDK",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialWeChat/WeChatSDK1.8.4",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialWeChat",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialAliPay",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialAliPay/APOpenSdk",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialDingTalk",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.odin.ODInstallSDKSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D83DEB4E2478B7DE00F710F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ODInstallSDKSample/ODInstallSDKSample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/Require",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/UI",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Core",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialQQ/QQSDK",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialFacebook/FacebookShare",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialDingTalk/DingTalk",
+				);
+				INFOPLIST_FILE = ODInstallSDKSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/ODInstallSDK_yy",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/ODInstallSDK",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialQQ",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SoicalInstagram",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialFacebook",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialSina",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialSina/Weibo_SDK/libWeiboSDK",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialWeChat/WeChatSDK1.8.4",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialWeChat",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialAliPay",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialAliPay/APOpenSdk",
+					"$(PROJECT_DIR)/ODInstallSDKSample/SDK/OdinShare/Social/SocialDingTalk",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.odin.ODInstallSDKSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D83DEB2E2478B7DC00F710F1 /* Build configuration list for PBXProject "ODInstallSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83DEB4A2478B7DE00F710F1 /* Debug */,
+				D83DEB4B2478B7DE00F710F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D83DEB4C2478B7DE00F710F1 /* Build configuration list for PBXNativeTarget "ODInstallSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83DEB4D2478B7DE00F710F1 /* Debug */,
+				D83DEB4E2478B7DE00F710F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D83DEB2B2478B7DC00F710F1 /* Project object */;
+}

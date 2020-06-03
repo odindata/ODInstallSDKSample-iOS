@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ODIAlertViewController">
+            <connections>
+                <outlet property="cancelBtn" destination="L32-Ya-Dmd" id="oOi-qe-Qrk"/>
+                <outlet property="containerView" destination="PGX-eq-nDS" id="5pm-t5-2YE"/>
+                <outlet property="okBtn" destination="zjw-Ca-zqu" id="VNn-56-3cc"/>
+                <outlet property="userIdTextFiled" destination="B2E-wy-Ljc" id="SOx-Ok-ckF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PGX-eq-nDS">
+                    <rect key="frame" x="26" y="176" width="323" height="150"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入自定义用户昵称以使用demo功能" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B2E-wy-Ljc">
+                            <rect key="frame" x="20" y="25" width="283" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="AT8-Ck-J8o"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L32-Ya-Dmd">
+                            <rect key="frame" x="20" y="85" width="131.5" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="c84-uk-yYl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="pJ1-BV-QJi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjw-Ca-zqu">
+                            <rect key="frame" x="171.5" y="85" width="131.5" height="40"/>
+                            <color key="backgroundColor" red="0.015686274510000001" green="0.79607843140000001" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="kFK-AP-ouf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="okAction:" destination="-1" eventType="touchUpInside" id="ZI7-fH-azf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="zjw-Ca-zqu" secondAttribute="trailing" constant="20" id="2w1-4u-mD3"/>
+                        <constraint firstItem="zjw-Ca-zqu" firstAttribute="top" secondItem="B2E-wy-Ljc" secondAttribute="bottom" constant="20" id="3c3-Jv-Zvg"/>
+                        <constraint firstAttribute="trailing" secondItem="B2E-wy-Ljc" secondAttribute="trailing" constant="20" id="I0S-9b-YYT"/>
+                        <constraint firstItem="B2E-wy-Ljc" firstAttribute="leading" secondItem="PGX-eq-nDS" secondAttribute="leading" constant="20" id="LiS-LK-9yC"/>
+                        <constraint firstItem="L32-Ya-Dmd" firstAttribute="leading" secondItem="PGX-eq-nDS" secondAttribute="leading" constant="20" id="aNx-B4-Anr"/>
+                        <constraint firstItem="L32-Ya-Dmd" firstAttribute="width" secondItem="B2E-wy-Ljc" secondAttribute="width" multiplier="0.5" constant="-10" id="cnE-Lu-dcs"/>
+                        <constraint firstAttribute="height" constant="150" id="iMD-Nv-myd"/>
+                        <constraint firstItem="B2E-wy-Ljc" firstAttribute="top" secondItem="PGX-eq-nDS" secondAttribute="top" constant="25" id="ioy-Nu-D8C"/>
+                        <constraint firstItem="L32-Ya-Dmd" firstAttribute="top" secondItem="B2E-wy-Ljc" secondAttribute="bottom" constant="20" id="wLV-t2-gPn"/>
+                        <constraint firstItem="zjw-Ca-zqu" firstAttribute="width" secondItem="L32-Ya-Dmd" secondAttribute="width" id="zP3-Ml-n4M"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PGX-eq-nDS" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="176" id="Ft2-5K-7VU"/>
+                <constraint firstItem="PGX-eq-nDS" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="26" id="PCa-qj-UZL"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="PGX-eq-nDS" secondAttribute="trailing" constant="26" id="aai-Ze-0o1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="133" y="38"/>
+        </view>
+    </objects>
+</document>
