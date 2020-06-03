@@ -22,6 +22,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.title = @"渠道效果";
+    
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self setupView];

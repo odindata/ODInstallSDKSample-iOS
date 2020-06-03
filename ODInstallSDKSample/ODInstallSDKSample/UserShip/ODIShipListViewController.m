@@ -26,6 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"关系列表";
     self.tableView.rowHeight = 100;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.tableView registerClass:[ODIUShipListCell class] forCellReuseIdentifier:NSStringFromClass([ODIUShipListCell class])];

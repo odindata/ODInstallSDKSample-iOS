@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title = @"一键唤醒";
     self.wakeupBtn.layer.cornerRadius = 4;
     self.wakeupBtn.layer.masksToBounds = YES;
 }

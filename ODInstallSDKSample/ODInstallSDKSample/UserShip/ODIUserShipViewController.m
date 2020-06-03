@@ -28,6 +28,8 @@
    
     self.view.backgroundColor = [UIColor whiteColor];
     
+    self.title = @"用户关系";
+    
     [self setupView];
 }
 
